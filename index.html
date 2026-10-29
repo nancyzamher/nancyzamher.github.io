@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nancy Zamher · Cantante y compositora</title>
-<meta name="description" content="Nancy Zamher, cantante y compositora de la Ciudad de México. Su identidad autoral es un mestizaje de sonoridades enraizadas en el folclor latinoamericano, la música popular mexicana y el blues.">
+<meta name="description" content="Nancy Zamher, cantante, compositora y periodista de la Ciudad de México. Integrante del coro de cantautoras El Palomar y conductora en Horizonte 107.9 FM. Su identidad autoral es un mestizaje de sonoridades enraizadas en el folclor latinoamericano, la música popular mexicana y el blues.">
 <meta name="keywords" content="Nancy Zamher, cantautora mexicana, compositora, Raíces, Sangre de cacao, Amaranto, Flor Violeta, Gabriela, Blues de Luna, Pentasoul, Por la libre, blues, son, bolero, cumbia, tumbao">
 <meta name="author" content="Nancy Zamher">
 <meta property="og:title" content="Nancy Zamher · Cantante y compositora">
@@ -86,14 +86,28 @@ section{padding:96px 0}
 
 /* NOVEDAD */
 .news{background:linear-gradient(135deg,var(--amaranto),#7d1437);color:#fff;padding:64px 0}
-.news-grid{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center}
-.date-box{background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.25);border-radius:14px;padding:18px 26px;text-align:center;font-family:'Bitter',serif}
-.date-box b{display:block;font-size:3rem;line-height:1}
-.date-box span{font-size:.8rem;letter-spacing:.2em;text-transform:uppercase}
+.news-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.ncard{background:rgba(0,0,0,.16);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:8px}
+.ncard h4{font-family:'Bitter',serif;font-size:1.15rem;line-height:1.25}
+.ncard p{font-size:.92rem;opacity:.92;flex:1}
+.ncard a{font-size:.85rem;font-weight:600;text-decoration:none;color:#ffd9e6}
+.ncard a:hover{color:#fff}
+.date-box{font-family:'Bitter',serif;display:flex;align-items:baseline;gap:8px}
+.date-box b{font-size:1.8rem;line-height:1}
+.date-box span{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;opacity:.85}
 .news h3{font-size:clamp(1.6rem,3.5vw,2.3rem);margin:6px 0 10px}
-.news p{opacity:.95;max-width:720px}
-.news .band{margin-top:14px;font-size:.92rem;opacity:.9}
-@media (max-width:640px){.news-grid{grid-template-columns:1fr}.date-box{justify-self:start}}
+.news .band{margin-top:22px;font-size:.9rem;opacity:.85}
+/* EL PALOMAR / RADIO */
+.duo{display:grid;grid-template-columns:3fr 2fr;gap:28px}
+.duo .card{padding:34px}
+.duo .card h3{font-size:1.6rem;margin-bottom:10px}
+.duo .card p{margin-bottom:.9em}
+.duo .tag{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--amaranto);font-weight:600}
+.radio-card{background:var(--cacao)!important;color:var(--crema)}
+.radio-card p{color:var(--crema)!important;opacity:.88}
+.radio-card .tag{color:var(--oro)!important}
+.freq{font-family:'Bitter',serif;font-size:3.4rem;font-weight:800;color:var(--oro);line-height:1;margin:8px 0 14px}
+@media (max-width:860px){.duo{grid-template-columns:1fr}}
 
 /* BIO */
 .bio-grid{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:start}
@@ -187,6 +201,7 @@ footer small{opacity:.55;font-size:.8rem}
       <li><a href="#biografia">Biografía</a></li>
       <li><a href="#trayectoria">Trayectoria</a></li>
       <li><a href="#musica">Música</a></li>
+      <li><a href="#palomar">El Palomar</a></li>
       <li><a href="#videos">Videos</a></li>
       <li><a href="#galeria">Galería</a></li>
       <li><a href="#prensa">Prensa</a></li>
@@ -207,16 +222,38 @@ footer small{opacity:.55;font-size:.8rem}
   </div>
 </header>
 
-<!-- NOVEDAD -->
+<!-- NOVEDADES -->
 <div class="news">
-  <div class="wrap news-grid">
-    <div class="date-box"><b>14</b><span>Mar 2026</span></div>
-    <div>
-      <div class="kicker" style="color:#ffd9e6">Lo más reciente · Festival Eurojazz 2026</div>
-      <h3>«Por la libre» en el CENART</h3>
-      <p>Para celebrar 13 años de componer canciones, Nancy volvió al blues, el género de sus primeras letras. En el Escenario Contratiempo del Centro Nacional de las Artes presentó canciones que la han acompañado en su trayectoria con arreglos nuevos, además de temas inéditos que abren una nueva etapa.</p>
-      <p class="band">Nancy Zamher (voz y guitarra eléctrica) · Rima Yamir (guitarra eléctrica) · Aislinn Rodríguez (bajo) · Edgar Jiménez (batería) · Daniel de los Santos (teclado). Coros invitados: Nadia Yuleth, Rox Soul, Jess Puente y Ada Castro.</p>
+  <div class="wrap">
+    <div class="kicker" style="color:#ffd9e6">Lo más reciente · 2026</div>
+    <h3 style="margin-bottom:28px">Un nuevo sonido, más blues</h3>
+    <div class="news-cards">
+      <article class="ncard">
+        <div class="date-box"><b>SEP</b><span>2026</span></div>
+        <h4>«Somos», con El Palomar</h4>
+        <p>Sale el primer sencillo del primer disco del coro de cantautoras El Palomar. La canción es composición de Nancy.</p>
+        <a href="https://www.youtube.com/@elpalomarmx" target="_blank" rel="noopener">Ver en YouTube →</a>
+      </article>
+      <article class="ncard">
+        <div class="date-box"><b>5</b><span>Jun 2026</span></div>
+        <h4>Radio UNAM · Sala Julián Carrillo</h4>
+        <p>Concierto en vivo transmitido por el 96.1 FM dentro de la serie radiofónica <em>Intersecciones</em>.</p>
+        <a href="https://cultura.unam.mx/evento/concierto-de-nancy-zamher" target="_blank" rel="noopener">Ficha del concierto →</a>
+      </article>
+      <article class="ncard">
+        <div class="date-box"><b>14</b><span>Mar 2026</span></div>
+        <h4>«Por la libre» · Eurojazz, CENART</h4>
+        <p>Estreno de su nuevo sonido con banda renovada: 13 años de componer y un regreso al blues, con temas de siempre en arreglos nuevos y canciones inéditas.</p>
+        <a href="https://cenart.gob.mx/eventos/nancy-zamhermexico-cdmx/" target="_blank" rel="noopener">Más información →</a>
+      </article>
+      <article class="ncard">
+        <div class="date-box"><b>LIVE</b><span>Session</span></div>
+        <h4>Live session</h4>
+        <p>Una sesión en vivo grabada con la nueva banda, para escuchar el sonido de esta etapa.</p>
+        <!-- PENDIENTE: enlace a la live session -->
+      </article>
     </div>
+    <p class="band">Banda actual: Nancy Zamher (voz y guitarra eléctrica) · Rima Yamir (guitarra eléctrica) · Aislinn Rodríguez (bajo) · Edgar Jiménez (batería) · Daniel de los Santos (teclado).</p>
   </div>
 </div>
 
@@ -235,12 +272,13 @@ footer small{opacity:.55;font-size:.8rem}
       <div class="bio-text">
         <p class="intro"><strong>Nancy Zamher</strong> es cantante y compositora de la Ciudad de México. Su identidad autoral es un mestizaje de sonoridades enraizadas en el folclor latinoamericano y la música popular mexicana.</p>
         <p>Su música aborda temáticas desde una perspectiva femenina. Con versos, cantos y emociones, muestra la belleza de la identidad mexicana y retrata situaciones actuales, historias de mujeres mexicanas y reflexiones personales, siempre con su anclaje en el género de la canción.</p>
+        <p>Es también periodista. Desde hace más de dos años conduce la barra matutina de <strong>Horizonte 107.9 FM</strong>, la emisora de jazz del Instituto Mexicano de la Radio (IMER). Forma parte del coro de cantautoras <strong>El Palomar</strong> como cantante, arreglista y directora coral.</p>
         <p>Egresó del Taller de Composición de la Sociedad de Autores y Compositores de México (SACM, 2019–2021) y estudió Teoría musical en la Casa de la Música Mexicana. En octubre de 2019 obtuvo el primer lugar en el 4.º Concurso Viva la Canción de Autor de la Ciudad de México. Ha desarrollado su voz con Iraida Noriega, Betsy Pecanins, Mike Melo, Hebe Rosell, Marlon Saunders y Mamselle Ruíz. Antes de dedicarse de lleno a la música estudió en la Escuela de Periodismo Carlos Septién García (2006–2010).</p>
-        <p>En 2021 publicó su primer disco de larga duración, <em>Raíces</em>, que va del son, el bolero y la cumbia al reggae, el tumbao y los acentos del rock. Antes había editado los EP <em>Blues de Luna</em> (2012) y <em>Pentasoul</em> (2015). En 2026 celebra 13 años de componer con una banda renovada y un regreso al blues, el estilo que inspiró sus primeros temas.</p>
+        <p>En 2021 publicó su primer disco de larga duración, <em>Raíces</em>, que va del son, el bolero y la cumbia al reggae, el tumbao y los acentos del rock. Antes había editado los EP <em>Blues de Luna</em> (2012) y <em>Pentasoul</em> (2015). En 2025 publicó el EP <em>Cicatrices</em>, con seis canciones escritas en 2015, para cerrar esa etapa. En 2026 celebra 13 años de componer con un sonido nuevo, más cercano al blues y a los estilos afroamericanos, y una banda renovada. Lo estrenó en el Festival Eurojazz del CENART, lo llevó a la Sala Julián Carrillo de Radio UNAM y lo grabó en una live session. Ya prepara su próximo disco, <em>Guardianas</em>, con canciones sobre historias de mujeres mexicanas.</p>
         <div class="facts">
           <div class="fact"><b>13</b><span>años componiendo</span></div>
           <div class="fact"><b>15</b><span>temas en <em>Raíces</em></span></div>
-          <div class="fact"><b>3</b><span>discos publicados</span></div>
+          <div class="fact"><b>107.9</b><span>Horizonte, IMER</span></div>
           <div class="fact"><b>1.º</b><span>Viva la Canción de Autor 2019</span></div>
         </div>
       </div>
@@ -259,7 +297,10 @@ footer small{opacity:.55;font-size:.8rem}
       <li><div class="y">2019</div><p>Graba <em>Raíces</em>. Gana el primer lugar del 4.º Concurso Viva la Canción de Autor de la Ciudad de México. Ingresa al Taller de Composición de la SACM y estudia Teoría musical en la Casa de la Música Mexicana.</p></li>
       <li><div class="y">2020</div><p>Lanza los sencillos <em>Sangre de cacao</em> (junio) y <em>Amaranto</em> (28 de agosto), este último acompañado por la serie de video #AmarAmar.</p></li>
       <li><div class="y">2021</div><p>Siguen los sencillos <em>Flor Violeta</em> y <em>Gabriela</em>, y el 25 de junio publica el álbum completo <em>Raíces</em> en plataformas digitales. Termina el Taller de Composición de la SACM.</p></li>
-      <li><div class="y">2026</div><p>Celebra 13 años de componer con el concierto «Por la libre» en el Festival Eurojazz (CENART, 14 de marzo), con una banda nueva, un regreso al blues y temas inéditos.</p></li>
+      <li><div class="y">2021–2022</div><p>Presenta <em>Raíces</em> en vivo en el Foro Hilvana (28 de noviembre de 2021). A finales de 2022 lanza «Que pase el otoño», una ranchera-country al ritmo del gypsy jazz y primer sencillo de <em>Cicatrices</em>. El 1 de diciembre la presenta en el Foro del Tejedor, donde cierra el ciclo de <em>Raíces</em>, con Mariana Santiago como artista invitada.</p></li>
+      <li><div class="y">2024</div><p>Empieza a conducir la barra matutina de Horizonte 107.9 FM (IMER). Con El Palomar canta en el Teatro de la Ciudad Esperanza Iris en el concierto del cuarto aniversario del coro, dedicado a las madres buscadoras. Ahí comparte la dirección coral con Bárbara Riquelme y Alex Ellis, y el coro interpreta su canción «Tesoro».</p></li>
+      <li><div class="y">2025</div><p>El 12 de junio publica el EP <em>Cicatrices</em>, seis canciones escritas en 2015 que cierran la etapa iniciada ese año. Comienza a producir <em>Guardianas</em>.</p></li>
+      <li><div class="y">2026</div><p>Estrena su nuevo sonido, más blues, con el concierto «Por la libre» en el Festival Eurojazz (CENART, 14 de marzo). Le siguen el concierto del 5 de junio en la Sala Julián Carrillo de Radio UNAM, transmitido por el 96.1 FM, y una live session. En septiembre El Palomar lanza «Somos», escrita por Nancy, como primer sencillo de su primer disco.</p></li>
     </ul>
   </div>
 </section>
@@ -269,6 +310,22 @@ footer small{opacity:.55;font-size:.8rem}
   <div class="wrap">
     <div class="sec-title"><div class="kicker">Música</div><h2>Discografía</h2><span class="line"></span></div>
     <div class="disc">
+      <article class="album">
+        <div class="cover" style="background:linear-gradient(135deg,#1d1210,#5c1430 60%,#d9a441)"><img src="assets/img/musica/guardianas-portada.jpg" alt="" onerror="this.remove()"><h3>Guardianas</h3></div>
+        <div class="body">
+          <div class="meta">Próximo disco · 2025–2026 · en producción</div>
+          <p>Su nuevo trabajo, que reúne canciones con historias de mujeres mexicanas, entre el blues y los estilos afroamericanos y latinos.</p>
+        </div>
+      </article>
+      <article class="album">
+        <div class="cover" style="background:linear-gradient(135deg,#3b211a,#6b3a2a 55%,#b0204f)"><img src="https://i.scdn.co/image/ab67616d0000b2736ee78f8929e24e559cb6b624" alt="Portada de Cicatrices" onerror="this.remove()"><h3>Cicatrices</h3></div>
+        <div class="body">
+          <div class="meta">EP · 12 de junio de 2025 · 6 temas</div>
+          <p>Un viaje melancólico al pasado con canciones escritas en 2015, que van de la música popular mexicana a la rumba, el rock y el rhythm and blues. Cierra la etapa que empezó en 2015. Producción de Felipe Souza y Ricardo Héctor Jiménez; arreglos y dirección musical de Jorge García Montemayor.</p>
+          <div class="singles"><span>Que pase el otoño</span></div>
+          <div class="platforms" style="margin-top:14px"><a href="https://open.spotify.com/album/1WMMq1JivqQaZ7K3LkHHha" target="_blank" rel="noopener">Escuchar en Spotify</a></div>
+        </div>
+      </article>
       <article class="album">
         <div class="cover"><img src="assets/img/musica/raices-portada.jpg" alt="" onerror="this.remove()"><h3>Raíces</h3></div>
         <div class="body">
@@ -294,7 +351,7 @@ footer small{opacity:.55;font-size:.8rem}
     </div>
 
     <div class="player">
-      <iframe src="https://open.spotify.com/embed/artist/356ZQzLGPndwhRG6vczAva?theme=0" height="380" loading="lazy" allow="encrypted-media" title="Nancy Zamher en Spotify"></iframe>
+      <iframe src="https://open.spotify.com/embed/album/1WMMq1JivqQaZ7K3LkHHha?theme=0" height="380" loading="lazy" allow="encrypted-media" title="Cicatrices en Spotify"></iframe>
       <div>
         <iframe src="https://open.spotify.com/embed/track/6QxY7AaS9tLkQhhjGPCo7n" height="152" loading="lazy" allow="encrypted-media" title="Sencillo"></iframe>
         <iframe src="https://open.spotify.com/embed/track/0UKn9o8xEqDrgi5zPrgtJD" height="152" loading="lazy" allow="encrypted-media" title="Sencillo" style="margin-top:16px"></iframe>
@@ -308,6 +365,34 @@ footer small{opacity:.55;font-size:.8rem}
       <a href="https://music.amazon.com.mx/artists/B08BYBV2HM" target="_blank" rel="noopener">Amazon Music</a>
       <a href="https://www.youtube.com/channel/UCKJ3C3o4e_9IVJUGN86Fajg" target="_blank" rel="noopener">YouTube</a>
       <a href="https://soundcloud.com/nancyzamher" target="_blank" rel="noopener">SoundCloud</a>
+    </div>
+  </div>
+</section>
+
+<!-- EL PALOMAR Y RADIO -->
+<section id="palomar" style="background:var(--crema-2)">
+  <div class="wrap">
+    <div class="sec-title"><div class="kicker">Otros caminos</div><h2>El Palomar y la radio</h2><span class="line"></span></div>
+    <div class="duo">
+      <div class="card">
+        <div class="tag">Coro de cantautoras</div>
+        <h3>El Palomar</h3>
+        <p>El Palomar es un coro de cantautoras que viven en la Ciudad de México y vienen de distintas partes de Latinoamérica. Su repertorio se arma con canciones de sus propias integrantes. Nancy canta en el coro, hace arreglos y ha dirigido al coro en varias canciones.</p>
+        <p>En 2024 dirigió al coro, junto con Bárbara Riquelme y Alex Ellis, en el Teatro de la Ciudad Esperanza Iris, en el concierto del cuarto aniversario dedicado a las madres buscadoras. En septiembre de 2026 salió <strong>«Somos»</strong>, composición de Nancy, como primer sencillo del primer disco de El Palomar.</p>
+        <div class="platforms" style="margin-top:18px">
+          <a href="https://www.youtube.com/@elpalomarmx" target="_blank" rel="noopener">El Palomar en YouTube</a>
+          <a href="https://www.instagram.com/elpalomarmx" target="_blank" rel="noopener">@elpalomarmx</a>
+        </div>
+      </div>
+      <div class="card radio-card">
+        <div class="tag">Radio · IMER</div>
+        <div class="freq">107.9 FM</div>
+        <h3>Horizonte</h3>
+        <p>Desde hace más de dos años, Nancy conduce la barra matutina de Horizonte, la emisora de jazz del Instituto Mexicano de la Radio, donde junta su oficio de periodista con su amor por la música.</p>
+        <div class="platforms" style="margin-top:18px">
+          <a href="https://www.imer.mx/horizonte/" target="_blank" rel="noopener" style="border-color:var(--oro);color:var(--crema)">Escuchar Horizonte</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -348,7 +433,12 @@ footer small{opacity:.55;font-size:.8rem}
       <div class="card"><div class="ico">📄</div><h3>Press kit</h3><a href="assets/press-kit-nancy-zamher.pdf" target="_blank">Descargar press kit (PDF)</a></div>
       <div class="card"><div class="ico">✉️</div><h3>Contacto</h3><p id="correo">hola@nancyzamher.com</p></div>
       <div class="card"><div class="ico">📰</div><h3>Han dicho</h3>
-        <p><a href="https://cenart.gob.mx/eventos/nancy-zamhermexico-cdmx/" target="_blank" rel="noopener">CENART · Eurojazz 2026</a><br>
+        <p><a href="https://cultura.unam.mx/evento/concierto-de-nancy-zamher" target="_blank" rel="noopener">Cultura UNAM · Radio UNAM 2026</a><br>
+        <a href="https://cenart.gob.mx/eventos/nancy-zamhermexico-cdmx/" target="_blank" rel="noopener">CENART · Eurojazz 2026</a><br>
+        <a href="https://www.chilango.com/que-hacer/musica/el-palomar-concierto-cdmx-madres-buscadoras/" target="_blank" rel="noopener">Chilango · El Palomar</a><br>
+        <a href="https://periodicovictoria.com/nancy-zamher-cierra-un-ciclo-lleno-de-matices-y-experiencias/" target="_blank" rel="noopener">Periódico Victoria · Que pase el otoño</a><br>
+        <a href="https://blancalechuza.com.mx/nancy-zamher-foro-del-tejedor-01-12-2022/" target="_blank" rel="noopener">Blanca Lechuza · Foro del Tejedor 2022 (fotos)</a><br>
+        <a href="https://www.cronica.com.mx/escenario/nancy-zamher-presentara-foro-hilvana-raices.html" target="_blank" rel="noopener">Crónica · Raíces en vivo</a><br>
         <a href="https://regeneracion.mx/se-presenta-nancy-zamher-en-el-ultimo-sabado-del-eurojazz-2026/" target="_blank" rel="noopener">Regeneración · 2026</a><br>
         <a href="https://www.ntrguadalajara.com/post.php?id_nota=170104" target="_blank" rel="noopener">NTR Guadalajara · Raíces</a><br>
         <a href="https://www.iwaymagazine.com/blogs/cine/raices-el-nuevo-album-de-nancy-zamher" target="_blank" rel="noopener">iWay Magazine · 2021</a><br>
