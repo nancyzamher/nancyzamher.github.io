@@ -141,6 +141,8 @@ section{padding:96px 0}
 .album .cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .album .cover h3{position:relative;font-size:2rem;text-shadow:0 2px 12px rgba(0,0,0,.4)}
 .album .cover:has(img) h3{display:none}
+.album .cover img.yt-cover{transform:scale(1.34)}
+.album .cover{overflow:hidden}
 .album .body{padding:22px;flex:1}
 .album .meta{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--amaranto);font-weight:600}
 .album p{font-size:.95rem;margin-top:8px;color:#4a3b34}
@@ -345,17 +347,18 @@ footer small{opacity:.55;font-size:.8rem}
         </div>
       </article>
       <article class="album">
-        <div class="cover" style="background:linear-gradient(135deg,#3b211a,#8a5a1f)"><img src="assets/img/musica/pentasoul-portada.jpg" alt="" onerror="this.remove()"><h3>Pentasoul</h3></div>
+        <div class="cover" style="background:linear-gradient(135deg,#3b211a,#8a5a1f)"><img class="yt-cover" src="https://i.ytimg.com/vi/2NruIt0oc6k/hqdefault.jpg" alt="Pentasoul" onerror="this.remove()"><h3>Pentasoul</h3></div>
         <div class="body">
-          <div class="meta">EP · 2015</div>
-          <p>Segundo EP de canciones propias, entre el soul y el blues.</p>
+          <div class="meta">EP · 2015 · 5 temas</div>
+          <p>Pentasoul es el dueto de Nancy Zamher con el guitarrista Gregorio Gómez. El EP se grabó en 2015 entre la Ciudad de México y Querétaro, con mezcla de Josué Partida y masterización de Luis Herrera.</p>
+          <div class="platforms" style="margin-top:14px"><a href="https://www.youtube.com/watch?v=2NruIt0oc6k" target="_blank" rel="noopener">«Hojas Secas» en YouTube</a></div>
         </div>
       </article>
       <article class="album">
         <div class="cover" style="background:linear-gradient(135deg,#141c33,#3b211a)"><img src="assets/img/musica/blues-de-luna-portada.jpg" alt="" onerror="this.remove()"><h3>Blues de Luna</h3></div>
         <div class="body">
-          <div class="meta">EP · 2012</div>
-          <p>Primer EP de Nancy Zamher, nacido del blues, el género que marcó sus primeras letras.</p>
+          <div class="meta">EP · 2012 · como Zamher·Time</div>
+          <p>Su primer EP, publicado con el nombre Zamher·Time y nacido del blues, el género que marcó sus primeras letras.</p>
         </div>
       </article>
     </div>
