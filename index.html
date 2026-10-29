@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nancy Zamher · Cantante y compositora</title>
+<meta name="description" content="Nancy Zamher, cantante y compositora de la Ciudad de México. Su identidad autoral es un mestizaje de sonoridades enraizadas en el folclor latinoamericano, la música popular mexicana y el blues.">
+<meta name="keywords" content="Nancy Zamher, cantautora mexicana, compositora, Raíces, Sangre de cacao, Amaranto, Flor Violeta, Gabriela, Blues de Luna, Pentasoul, Por la libre, blues, son, bolero, cumbia, tumbao">
+<meta name="author" content="Nancy Zamher">
+<meta property="og:title" content="Nancy Zamher · Cantante y compositora">
+<meta property="og:description" content="Cantante y compositora mexicana. Mestizaje de sonoridades enraizadas en el folclor latinoamericano, la música popular mexicana y el blues.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/elements/nancy-zamher-amaranto-header.jpg">
+<meta property="og:site_name" content="Nancy Zamher">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@NancyZamher">
+<link rel="icon" href="assets/img/favicon.ico">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;0,800;1,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cacao:#2a1712;
+  --cacao-2:#3b211a;
+  --amaranto:#b0204f;
+  --amaranto-claro:#e04a7a;
+  --oro:#d9a441;
+  --crema:#f6eee3;
+  --crema-2:#eadcc8;
+  --tinta:#1d1210;
+  --gris:#7a6a60;
+  --max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:'Work Sans',system-ui,sans-serif;background:var(--crema);color:var(--tinta);line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:'Bitter',Georgia,serif;line-height:1.15}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+
+/* NAV */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(42,23,18,.92);backdrop-filter:blur(8px);color:var(--crema)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:'Bitter',serif;font-weight:800;letter-spacing:.06em;text-decoration:none;font-size:1.15rem;display:flex;align-items:center;gap:10px}
+.brand img{height:34px;width:auto}
+.brand span em{color:var(--oro);font-style:normal}
+.menu{display:flex;gap:22px;list-style:none}
+.menu a{text-decoration:none;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;opacity:.85;transition:.2s}
+.menu a:hover{opacity:1;color:var(--oro)}
+.burger{display:none;background:none;border:0;color:var(--crema);font-size:1.6rem;cursor:pointer}
+@media (max-width:860px){
+  .burger{display:block}
+  .menu{position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--cacao);max-height:0;overflow:hidden;transition:max-height .3s}
+  .menu.open{max-height:420px}
+  .menu a{display:block;padding:14px 20px;border-top:1px solid rgba(255,255,255,.06)}
+}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:flex-end;color:var(--crema);position:relative;overflow:hidden;
+  background:var(--cacao) url('assets/img/elements/nancy-zamher-amaranto-header.jpg') center/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;background:
+  linear-gradient(180deg,rgba(42,23,18,.15) 0%,rgba(42,23,18,.55) 55%,rgba(42,23,18,.96) 100%),
+  radial-gradient(ellipse at 80% 20%,rgba(176,32,79,.35),transparent 60%)}
+.hero .wrap{position:relative;padding-bottom:72px;padding-top:120px;width:100%}
+.kicker{font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;color:var(--oro);font-weight:600}
+.hero h1{font-size:clamp(3rem,10vw,7.5rem);font-weight:800;letter-spacing:-.02em;margin:.15em 0 .2em}
+.hero p.lead{max-width:560px;font-size:1.15rem;font-weight:300;opacity:.92}
+.hero-cta{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;text-decoration:none;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;transition:.2s}
+.btn-primary{background:var(--amaranto);color:#fff}
+.btn-primary:hover{background:var(--amaranto-claro)}
+.btn-ghost{border:1px solid rgba(246,238,227,.5);color:var(--crema)}
+.btn-ghost:hover{background:rgba(246,238,227,.1)}
+
+/* SECTIONS */
+section{padding:96px 0}
+.sec-title{margin-bottom:44px}
+.sec-title .kicker{color:var(--amaranto)}
+.sec-title h2{font-size:clamp(2rem,4.5vw,3.1rem);margin-top:6px}
+.sec-title .line{display:block;width:64px;height:3px;background:var(--oro);margin-top:18px}
+.dark{background:var(--cacao);color:var(--crema)}
+.dark .sec-title .kicker{color:var(--oro)}
+.dark .sec-title .line{background:var(--amaranto)}
+
+/* NOVEDAD */
+.news{background:linear-gradient(135deg,var(--amaranto),#7d1437);color:#fff;padding:64px 0}
+.news-grid{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center}
+.date-box{background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.25);border-radius:14px;padding:18px 26px;text-align:center;font-family:'Bitter',serif}
+.date-box b{display:block;font-size:3rem;line-height:1}
+.date-box span{font-size:.8rem;letter-spacing:.2em;text-transform:uppercase}
+.news h3{font-size:clamp(1.6rem,3.5vw,2.3rem);margin:6px 0 10px}
+.news p{opacity:.95;max-width:720px}
+.news .band{margin-top:14px;font-size:.92rem;opacity:.9}
+@media (max-width:640px){.news-grid{grid-template-columns:1fr}.date-box{justify-self:start}}
+
+/* BIO */
+.bio-grid{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:start}
+.slider{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:4/5;background:var(--crema-2);box-shadow:0 20px 50px rgba(42,23,18,.25)}
+.slider img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s}
+.slider img.on{opacity:1}
+.dots{position:absolute;bottom:14px;left:0;right:0;display:flex;justify-content:center;gap:8px}
+.dots button{width:9px;height:9px;border-radius:50%;border:0;background:rgba(255,255,255,.5);cursor:pointer}
+.dots button.on{background:#fff}
+.bio-text p{margin-bottom:1.1em}
+.bio-text p.intro{font-family:'Bitter',serif;font-size:1.3rem;line-height:1.5;color:var(--cacao)}
+.bio-text strong{color:var(--amaranto)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin-top:32px}
+.fact{border-top:2px solid var(--oro);padding-top:10px}
+.fact b{font-family:'Bitter',serif;font-size:1.7rem;display:block;color:var(--cacao)}
+.fact span{font-size:.85rem;color:var(--gris)}
+@media (max-width:860px){.bio-grid{grid-template-columns:1fr}.slider{max-width:480px}}
+
+/* TRAYECTORIA */
+.timeline{list-style:none;border-left:2px solid rgba(217,164,65,.5);margin-left:8px}
+.timeline li{position:relative;padding:0 0 30px 30px}
+.timeline li::before{content:"";position:absolute;left:-8px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--oro);border:3px solid var(--cacao)}
+.timeline .y{font-family:'Bitter',serif;font-weight:800;color:var(--oro);font-size:1.15rem}
+.timeline p{opacity:.88;max-width:760px}
+
+/* DISCOGRAFIA */
+.disc{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px}
+.album{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(42,23,18,.08);display:flex;flex-direction:column}
+.album .cover{aspect-ratio:1;background:linear-gradient(135deg,var(--cacao-2),var(--amaranto));display:flex;align-items:flex-end;padding:22px;color:var(--crema);position:relative}
+.album .cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.album .cover h3{position:relative;font-size:2rem;text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.album .body{padding:22px;flex:1}
+.album .meta{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--amaranto);font-weight:600}
+.album p{font-size:.95rem;margin-top:8px;color:#4a3b34}
+.singles{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
+.singles span{font-size:.75rem;background:var(--crema);border:1px solid var(--crema-2);padding:3px 10px;border-radius:999px}
+.player{margin-top:56px;display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.player iframe{width:100%;border:0;border-radius:12px}
+.platforms{margin-top:36px;display:flex;flex-wrap:wrap;gap:10px}
+.platforms a{text-decoration:none;font-size:.85rem;font-weight:500;border:1px solid var(--cacao);padding:9px 18px;border-radius:999px;transition:.2s}
+.platforms a:hover{background:var(--cacao);color:var(--crema)}
+@media (max-width:760px){.player{grid-template-columns:1fr}}
+
+/* VIDEOS */
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
+.vid{aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000;position:relative;cursor:pointer}
+.vid img{width:100%;height:100%;object-fit:cover;opacity:.8;transition:.3s}
+.vid:hover img{opacity:1;transform:scale(1.03)}
+.vid::after{content:"▶";position:absolute;inset:0;display:grid;place-items:center;font-size:2.4rem;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.6);pointer-events:none}
+.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vid.playing::after{display:none}
+.amar{margin-top:56px}
+.amar h3{font-size:1.5rem;margin-bottom:6px}
+.amar > p{opacity:.85;max-width:760px;margin-bottom:20px}
+.chapters{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.chapter{display:block;text-decoration:none;border:1px solid rgba(246,238,227,.18);border-radius:12px;padding:18px;transition:.2s}
+.chapter:hover{border-color:var(--oro);background:rgba(246,238,227,.04)}
+.chapter b{font-family:'Bitter',serif;color:var(--oro);display:block;font-size:1.1rem}
+.chapter span{font-size:.85rem;opacity:.75}
+
+/* GALERIA */
+.gallery{columns:4 220px;column-gap:12px}
+.gallery a{display:block;margin-bottom:12px;border-radius:10px;overflow:hidden;break-inside:avoid;background:var(--crema-2)}
+.gallery img{width:100%;transition:transform .4s}
+.gallery a:hover img{transform:scale(1.04)}
+
+/* PRENSA */
+.press{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.card{background:#fff;border-radius:16px;padding:28px;box-shadow:0 10px 30px rgba(42,23,18,.07)}
+.card .ico{font-size:1.8rem;margin-bottom:10px}
+.card h3{font-size:1.2rem;margin-bottom:6px}
+.card p,.card a{font-size:.95rem;color:#4a3b34;word-break:break-word}
+
+/* FOOTER */
+footer{background:var(--tinta);color:var(--crema);text-align:center;padding:56px 20px}
+footer img{height:56px;margin:0 auto 14px}
+footer .name{font-family:'Bitter',serif;font-size:1.6rem;font-weight:800;letter-spacing:.05em}
+.social{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin:22px 0}
+.social a{text-decoration:none;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;padding:8px 14px;border:1px solid rgba(246,238,227,.25);border-radius:999px}
+.social a:hover{border-color:var(--oro);color:var(--oro)}
+footer small{opacity:.55;font-size:.8rem}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#inicio"><img src="assets/img/elements/logo-nancy.png" alt="" onerror="this.remove()"><span>NANCY <em>ZAMHER</em></span></a>
+    <button class="burger" aria-label="Menú" onclick="document.querySelector('.menu').classList.toggle('open')">☰</button>
+    <ul class="menu" onclick="this.classList.remove('open')">
+      <li><a href="#biografia">Biografía</a></li>
+      <li><a href="#trayectoria">Trayectoria</a></li>
+      <li><a href="#musica">Música</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#prensa">Prensa</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- INICIO -->
+<header id="inicio" class="hero">
+  <div class="wrap">
+    <div class="kicker">Cantante y compositora · Ciudad de México</div>
+    <h1>Nancy Zamher</h1>
+    <p class="lead">Un mestizaje de sonoridades enraizadas en el folclor latinoamericano, la música popular mexicana y el blues, contado desde una mirada de mujer.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="https://open.spotify.com/artist/356ZQzLGPndwhRG6vczAva" target="_blank" rel="noopener">Escuchar en Spotify</a>
+      <a class="btn btn-ghost" href="#musica">Discografía</a>
+    </div>
+  </div>
+</header>
+
+<!-- NOVEDAD -->
+<div class="news">
+  <div class="wrap news-grid">
+    <div class="date-box"><b>14</b><span>Mar 2026</span></div>
+    <div>
+      <div class="kicker" style="color:#ffd9e6">Lo más reciente · Festival Eurojazz 2026</div>
+      <h3>«Por la libre» en el CENART</h3>
+      <p>Para celebrar 13 años de componer canciones, Nancy volvió al blues, el género de sus primeras letras. En el Escenario Contratiempo del Centro Nacional de las Artes presentó canciones que la han acompañado en su trayectoria con arreglos nuevos, además de temas inéditos que abren una nueva etapa.</p>
+      <p class="band">Nancy Zamher (voz y guitarra eléctrica) · Rima Yamir (guitarra eléctrica) · Aislinn Rodríguez (bajo) · Edgar Jiménez (batería) · Daniel de los Santos (teclado). Coros invitados: Nadia Yuleth, Rox Soul, Jess Puente y Ada Castro.</p>
+    </div>
+  </div>
+</div>
+
+<!-- BIOGRAFIA -->
+<section id="biografia">
+  <div class="wrap">
+    <div class="sec-title"><div class="kicker">Biografía</div><h2>Encontrando el tumbao a la vida</h2><span class="line"></span></div>
+    <div class="bio-grid">
+      <div class="slider" id="slider">
+        <img class="on" src="assets/img/slider/nancy-zamher-slide1.jpg" alt="Nancy Zamher">
+        <img src="assets/img/slider/nancy-zamher-slide2.jpg" alt="Nancy Zamher">
+        <img src="assets/img/slider/nancy-zamher-slide3.jpg" alt="Nancy Zamher">
+        <img src="assets/img/slider/nancy-zamher-slide4.jpg" alt="Nancy Zamher">
+        <div class="dots"></div>
+      </div>
+      <div class="bio-text">
+        <p class="intro"><strong>Nancy Zamher</strong> es cantante y compositora de la Ciudad de México. Su identidad autoral es un mestizaje de sonoridades enraizadas en el folclor latinoamericano y la música popular mexicana.</p>
+        <p>Su música aborda temáticas desde una perspectiva femenina. Con versos, cantos y emociones, muestra la belleza de la identidad mexicana y retrata situaciones actuales, historias de mujeres mexicanas y reflexiones personales, siempre con su anclaje en el género de la canción.</p>
+        <p>Egresó del Taller de Composición de la Sociedad de Autores y Compositores de México (SACM, 2019–2021) y estudió Teoría musical en la Casa de la Música Mexicana. En octubre de 2019 obtuvo el primer lugar en el 4.º Concurso Viva la Canción de Autor de la Ciudad de México. Ha desarrollado su voz con Iraida Noriega, Betsy Pecanins, Mike Melo, Hebe Rosell, Marlon Saunders y Mamselle Ruíz. Antes de dedicarse de lleno a la música estudió en la Escuela de Periodismo Carlos Septién García (2006–2010).</p>
+        <p>En 2021 publicó su primer disco de larga duración, <em>Raíces</em>, que va del son, el bolero y la cumbia al reggae, el tumbao y los acentos del rock. Antes había editado los EP <em>Blues de Luna</em> (2012) y <em>Pentasoul</em> (2015). En 2026 celebra 13 años de componer con una banda renovada y un regreso al blues, el estilo que inspiró sus primeros temas.</p>
+        <div class="facts">
+          <div class="fact"><b>13</b><span>años componiendo</span></div>
+          <div class="fact"><b>15</b><span>temas en <em>Raíces</em></span></div>
+          <div class="fact"><b>3</b><span>discos publicados</span></div>
+          <div class="fact"><b>1.º</b><span>Viva la Canción de Autor 2019</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAYECTORIA -->
+<section id="trayectoria" class="dark">
+  <div class="wrap">
+    <div class="sec-title"><div class="kicker">Trayectoria</div><h2>Del blues a las raíces, y de vuelta</h2><span class="line"></span></div>
+    <ul class="timeline">
+      <li><div class="y">2012</div><p>Publica su primer EP, <em>Blues de Luna</em>, con temas de su autoría.</p></li>
+      <li><div class="y">2015</div><p>Edita el EP <em>Pentasoul</em>.</p></li>
+      <li><div class="y">2017</div><p>Comienza la exploración hacia sus raíces que daría forma a <em>Raíces</em>. Jorge García Montemayor se suma como arreglista, director musical y guitarrista de su banda.</p></li>
+      <li><div class="y">2019</div><p>Graba <em>Raíces</em>. Gana el primer lugar del 4.º Concurso Viva la Canción de Autor de la Ciudad de México. Ingresa al Taller de Composición de la SACM y estudia Teoría musical en la Casa de la Música Mexicana.</p></li>
+      <li><div class="y">2020</div><p>Lanza los sencillos <em>Sangre de cacao</em> (junio) y <em>Amaranto</em> (28 de agosto), este último acompañado por la serie de video #AmarAmar.</p></li>
+      <li><div class="y">2021</div><p>Siguen los sencillos <em>Flor Violeta</em> y <em>Gabriela</em>, y el 25 de junio publica el álbum completo <em>Raíces</em> en plataformas digitales. Termina el Taller de Composición de la SACM.</p></li>
+      <li><div class="y">2026</div><p>Celebra 13 años de componer con el concierto «Por la libre» en el Festival Eurojazz (CENART, 14 de marzo), con una banda nueva, un regreso al blues y temas inéditos.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- MUSICA -->
+<section id="musica">
+  <div class="wrap">
+    <div class="sec-title"><div class="kicker">Música</div><h2>Discografía</h2><span class="line"></span></div>
+    <div class="disc">
+      <article class="album">
+        <div class="cover"><img src="assets/img/musica/raices-portada.jpg" alt="" onerror="this.remove()"><h3>Raíces</h3></div>
+        <div class="body">
+          <div class="meta">Álbum · 2021 · 15 temas</div>
+          <p>Un compendio de canciones cálidas y alegres, con cuerdas, percusiones, zapateado y versos cantados en décimas. Producción de Felipe Souza y Ricardo Héctor Jiménez; arreglos y dirección musical de Jorge García Montemayor.</p>
+          <div class="singles"><span>Sangre de cacao</span><span>Amaranto</span><span>Flor Violeta</span><span>Gabriela</span></div>
+        </div>
+      </article>
+      <article class="album">
+        <div class="cover" style="background:linear-gradient(135deg,#3b211a,#8a5a1f)"><img src="assets/img/musica/pentasoul-portada.jpg" alt="" onerror="this.remove()"><h3>Pentasoul</h3></div>
+        <div class="body">
+          <div class="meta">EP · 2015</div>
+          <p>Segundo EP de canciones propias, entre el soul y el blues.</p>
+        </div>
+      </article>
+      <article class="album">
+        <div class="cover" style="background:linear-gradient(135deg,#141c33,#3b211a)"><img src="assets/img/musica/blues-de-luna-portada.jpg" alt="" onerror="this.remove()"><h3>Blues de Luna</h3></div>
+        <div class="body">
+          <div class="meta">EP · 2012</div>
+          <p>Primer EP de Nancy Zamher, nacido del blues, el género que marcó sus primeras letras.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="player">
+      <iframe src="https://open.spotify.com/embed/artist/356ZQzLGPndwhRG6vczAva?theme=0" height="380" loading="lazy" allow="encrypted-media" title="Nancy Zamher en Spotify"></iframe>
+      <div>
+        <iframe src="https://open.spotify.com/embed/track/6QxY7AaS9tLkQhhjGPCo7n" height="152" loading="lazy" allow="encrypted-media" title="Sencillo"></iframe>
+        <iframe src="https://open.spotify.com/embed/track/0UKn9o8xEqDrgi5zPrgtJD" height="152" loading="lazy" allow="encrypted-media" title="Sencillo" style="margin-top:16px"></iframe>
+      </div>
+    </div>
+
+    <div class="platforms">
+      <a href="https://open.spotify.com/artist/356ZQzLGPndwhRG6vczAva" target="_blank" rel="noopener">Spotify</a>
+      <a href="https://music.apple.com/mx/artist/nancy-zamher/1516749523" target="_blank" rel="noopener">Apple Music</a>
+      <a href="https://www.deezer.com/es/artist/96921692" target="_blank" rel="noopener">Deezer</a>
+      <a href="https://music.amazon.com.mx/artists/B08BYBV2HM" target="_blank" rel="noopener">Amazon Music</a>
+      <a href="https://www.youtube.com/channel/UCKJ3C3o4e_9IVJUGN86Fajg" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://soundcloud.com/nancyzamher" target="_blank" rel="noopener">SoundCloud</a>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEOS -->
+<section id="videos" class="dark">
+  <div class="wrap">
+    <div class="sec-title"><div class="kicker">Videos</div><h2>Videos y conciertos</h2><span class="line"></span></div>
+    <div class="vgrid" id="vgrid"></div>
+
+    <div class="amar">
+      <h3>#AmarAmar</h3>
+      <p>Una serie de cuatro capítulos con reflexiones sobre el amor, más allá del amor romántico, contadas por amigas y amigos de Nancy para celebrar el estreno de <em>Amaranto</em> (agosto de 2020). Guitarras y arreglos de Jorge García Montemayor, guitarra eléctrica de Tulio Gálvez, edición de Kino Luiggi.</p>
+      <div class="chapters">
+        <a class="chapter" href="https://www.facebook.com/lazamher/videos/330269501343247/" target="_blank" rel="noopener"><b>Capítulo 1</b><span>16 de agosto de 2020</span></a>
+        <a class="chapter" href="https://www.facebook.com/watch/?v=316341232781640" target="_blank" rel="noopener"><b>Capítulo 2</b><span>20 de agosto de 2020</span></a>
+        <a class="chapter" href="https://www.facebook.com/watch/?v=626796711587808" target="_blank" rel="noopener"><b>Capítulo 3</b><span>24 de agosto de 2020</span></a>
+        <a class="chapter" href="https://www.facebook.com/watch/?v=1725116887643339" target="_blank" rel="noopener"><b>Capítulo 4</b><span>26 de agosto de 2020</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section id="galeria">
+  <div class="wrap">
+    <div class="sec-title"><div class="kicker">Galería</div><h2>Nancy Zamher en Instagram</h2><span class="line"></span></div>
+    <div class="gallery" id="gallery"></div>
+    <div class="platforms" style="justify-content:center"><a href="https://www.instagram.com/nancyzamher/" target="_blank" rel="noopener">Seguir en Instagram</a></div>
+  </div>
+</section>
+
+<!-- PRENSA -->
+<section id="prensa" style="background:var(--crema-2)">
+  <div class="wrap">
+    <div class="sec-title"><div class="kicker">Prensa y contacto</div><h2>Prensa</h2><span class="line"></span></div>
+    <div class="press">
+      <div class="card"><div class="ico">📄</div><h3>Press kit</h3><a href="assets/press-kit-nancy-zamher.pdf" target="_blank">Descargar press kit (PDF)</a></div>
+      <div class="card"><div class="ico">✉️</div><h3>Contacto</h3><p id="correo">hola@nancyzamher.com</p></div>
+      <div class="card"><div class="ico">📰</div><h3>Han dicho</h3>
+        <p><a href="https://cenart.gob.mx/eventos/nancy-zamhermexico-cdmx/" target="_blank" rel="noopener">CENART · Eurojazz 2026</a><br>
+        <a href="https://regeneracion.mx/se-presenta-nancy-zamher-en-el-ultimo-sabado-del-eurojazz-2026/" target="_blank" rel="noopener">Regeneración · 2026</a><br>
+        <a href="https://www.ntrguadalajara.com/post.php?id_nota=170104" target="_blank" rel="noopener">NTR Guadalajara · Raíces</a><br>
+        <a href="https://www.iwaymagazine.com/blogs/cine/raices-el-nuevo-album-de-nancy-zamher" target="_blank" rel="noopener">iWay Magazine · 2021</a><br>
+        <a href="https://www.youtube.com/watch?v=Zn9hTqHjVnQ" target="_blank" rel="noopener">#JuevesDePláticas</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <img src="assets/img/elements/logo-nancy.png" alt="" onerror="this.remove()">
+  <div class="name">NANCY ZAMHER</div>
+  <div class="social">
+    <a href="https://open.spotify.com/artist/356ZQzLGPndwhRG6vczAva" target="_blank" rel="noopener">Spotify</a>
+    <a href="https://www.youtube.com/channel/UCKJ3C3o4e_9IVJUGN86Fajg" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://www.facebook.com/lazamher" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.instagram.com/nancyzamher/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://twitter.com/NancyZamher" target="_blank" rel="noopener">X / Twitter</a>
+    <a href="https://soundcloud.com/nancyzamher" target="_blank" rel="noopener">SoundCloud</a>
+  </div>
+  <small>Hecho con amor · © 2012–2026 Nancy Zamher. Todos los derechos reservados.</small>
+</footer>
+
+<script>
+// Slider de biografía
+(function(){
+  const s=document.getElementById('slider');const imgs=[...s.querySelectorAll('img')];const dots=s.querySelector('.dots');let i=0,t;
+  imgs.forEach((im,k)=>{const b=document.createElement('button');b.setAttribute('aria-label','Foto '+(k+1));b.onclick=()=>{go(k);restart()};dots.appendChild(b);im.onerror=()=>{im.dataset.bad=1}});
+  function go(k){imgs[i].classList.remove('on');dots.children[i].classList.remove('on');i=k;imgs[i].classList.add('on');dots.children[i].classList.add('on')}
+  function restart(){clearInterval(t);t=setInterval(()=>go((i+1)%imgs.length),5000)}
+  go(0);restart();
+})();
+
+// Videos de YouTube (carga ligera: miniatura y reproducción al clic)
+const VIDEOS=['nPcI0ytt1q0','nOkmErtBFr4','iGSWEFfrnl8','6Jk9SLvAt4s','KG22T6ceBR4','e-h4Jfm6IUA','VhmjfMnrGzs','Zn9hTqHjVnQ'];
+const vg=document.getElementById('vgrid');
+VIDEOS.forEach(id=>{
+  const d=document.createElement('div');d.className='vid';
+  d.innerHTML='<img loading="lazy" src="https://i.ytimg.com/vi/'+id+'/hqdefault.jpg" alt="Video de Nancy Zamher">';
+  d.onclick=()=>{d.classList.add('playing');d.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Video de Nancy Zamher"></iframe>'};
+  vg.appendChild(d);
+});
+
+// Galería (fotos de Instagram de la web original)
+const IG=[['001-01','CBi77KHDnKA'],['002-02','CBUepuxDMti'],['003-03','CA6sfguDlA2'],['004-04','CBI-JkBDUWu'],['005-05','CAOCNhbD1Q4'],['006-06','B-NRfkHDNfG'],['007-07','B7hS3drDUBg'],['008-08','B9qPkkkjqhk'],['009-09','B9gE-SSjaln'],['010-10','B8o3SuwjrFw'],['011-11','B_prECdDv84'],['012-12','B7B1H2sD8EQ'],['013-13','B7SNbpcjuOo'],['014-14','B8g7mdTjh1O'],['015-15','B6PX2CQDeZE'],['016-16','Bxkch-6lRYd'],['017-17','B2-soFaj4sw'],['018-18','B1DEnZmjcVr'],['019-19','B0bME4qDS1N'],['020-20','BzLrY9gjMTF'],['021-21','B24QDjKj8VX'],['022-22','ByA7Fk9j0vC']];
+const gal=document.getElementById('gallery');
+IG.forEach(([n,p])=>{
+  const a=document.createElement('a');a.href='https://www.instagram.com/p/'+p+'/';a.target='_blank';a.rel='noopener';
+  const im=new Image();im.loading='lazy';im.alt='Nancy Zamher en Instagram';im.src='assets/img/galeria/nancy-zamher-instagram-'+n+'.jpg';
+  im.onerror=()=>a.remove();a.appendChild(im);gal.appendChild(a);
+});
+</script>
+</body>
+</html>
