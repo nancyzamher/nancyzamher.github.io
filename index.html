@@ -10,7 +10,7 @@
 <meta property="og:title" content="Nancy Zamher · Cantante y compositora">
 <meta property="og:description" content="Cantante y compositora mexicana. Mestizaje de sonoridades enraizadas en el folclor latinoamericano, la música popular mexicana y el blues.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/img/elements/nancy-zamher-amaranto-header.jpg">
+<meta property="og:image" content="https://nancyzamher.github.io/assets/img/elements/nancy-zamher-hero.jpg">
 <meta property="og:site_name" content="Nancy Zamher">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@NancyZamher">
@@ -59,9 +59,9 @@ h1,h2,h3{font-family:'Bitter',Georgia,serif;line-height:1.15}
 
 /* HERO */
 .hero{min-height:100vh;display:flex;align-items:flex-end;color:var(--crema);position:relative;overflow:hidden;
-  background:var(--cacao) url('assets/img/elements/nancy-zamher-amaranto-header.jpg') center/cover no-repeat}
+  background:var(--cacao) url('assets/img/elements/nancy-zamher-hero.jpg') 70% center/cover no-repeat}
 .hero::before{content:"";position:absolute;inset:0;background:
-  linear-gradient(180deg,rgba(42,23,18,.15) 0%,rgba(42,23,18,.55) 55%,rgba(42,23,18,.96) 100%),
+  linear-gradient(90deg,rgba(29,18,16,.85) 0%,rgba(29,18,16,.35) 55%,rgba(29,18,16,0) 100%),linear-gradient(180deg,rgba(42,23,18,0) 50%,rgba(42,23,18,.9) 100%),
   radial-gradient(ellipse at 80% 20%,rgba(176,32,79,.35),transparent 60%)}
 .hero .wrap{position:relative;padding-bottom:72px;padding-top:120px;width:100%}
 .kicker{font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;color:var(--oro);font-weight:600}
@@ -106,6 +106,7 @@ section{padding:96px 0}
 .radio-card{background:var(--cacao)!important;color:var(--crema)}
 .radio-card p{color:var(--crema)!important;opacity:.88}
 .radio-card .tag{color:var(--oro)!important}
+.radio-foto{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:center 30%;border-radius:10px;margin:14px 0 4px}
 .freq{font-family:'Bitter',serif;font-size:3.4rem;font-weight:800;color:var(--oro);line-height:1;margin:8px 0 14px}
 @media (max-width:860px){.duo{grid-template-columns:1fr}}
 
@@ -139,9 +140,13 @@ section{padding:96px 0}
 .album .cover{aspect-ratio:1;background:linear-gradient(135deg,var(--cacao-2),var(--amaranto));display:flex;align-items:flex-end;padding:22px;color:var(--crema);position:relative}
 .album .cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .album .cover h3{position:relative;font-size:2rem;text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.album .cover:has(img) h3{display:none}
 .album .body{padding:22px;flex:1}
 .album .meta{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--amaranto);font-weight:600}
 .album p{font-size:.95rem;margin-top:8px;color:#4a3b34}
+.thumbs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.thumbs img{border-radius:8px;aspect-ratio:1;object-fit:cover}
+.thumbs figcaption{font-size:.75rem;color:var(--gris);margin-top:4px}
 .singles{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
 .singles span{font-size:.75rem;background:var(--crema);border:1px solid var(--crema-2);padding:3px 10px;border-radius:999px}
 .player{margin-top:56px;display:grid;grid-template-columns:1fr 1fr;gap:28px}
@@ -183,7 +188,7 @@ section{padding:96px 0}
 
 /* FOOTER */
 footer{background:var(--tinta);color:var(--crema);text-align:center;padding:56px 20px}
-footer img{height:56px;margin:0 auto 14px}
+footer img{height:34px;width:auto;margin:0 auto 18px;filter:brightness(1.7) saturate(.9)}
 footer .name{font-family:'Bitter',serif;font-size:1.6rem;font-weight:800;letter-spacing:.05em}
 .social{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin:22px 0}
 .social a{text-decoration:none;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;padding:8px 14px;border:1px solid rgba(246,238,227,.25);border-radius:999px}
@@ -195,7 +200,7 @@ footer small{opacity:.55;font-size:.8rem}
 
 <nav class="nav">
   <div class="wrap">
-    <a class="brand" href="#inicio"><img src="assets/img/elements/logo-nancy.png" alt="" onerror="this.remove()"><span>NANCY <em>ZAMHER</em></span></a>
+    <a class="brand" href="#inicio"><span>NANCY <em>ZAMHER</em></span></a>
     <button class="burger" aria-label="Menú" onclick="document.querySelector('.menu').classList.toggle('open')">☰</button>
     <ul class="menu" onclick="this.classList.remove('open')">
       <li><a href="#biografia">Biografía</a></li>
@@ -267,6 +272,7 @@ footer small{opacity:.55;font-size:.8rem}
         <img src="assets/img/slider/nancy-zamher-slide2.jpg" alt="Nancy Zamher">
         <img src="assets/img/slider/nancy-zamher-slide3.jpg" alt="Nancy Zamher">
         <img src="assets/img/slider/nancy-zamher-slide4.jpg" alt="Nancy Zamher">
+        <img src="assets/img/slider/nancy-zamher-slide5.jpg" alt="Nancy Zamher" style="object-position:35% center">
         <div class="dots"></div>
       </div>
       <div class="bio-text">
@@ -331,7 +337,11 @@ footer small{opacity:.55;font-size:.8rem}
         <div class="body">
           <div class="meta">Álbum · 2021 · 15 temas</div>
           <p>Un compendio de canciones cálidas y alegres, con cuerdas, percusiones, zapateado y versos cantados en décimas. Producción de Felipe Souza y Ricardo Héctor Jiménez; arreglos y dirección musical de Jorge García Montemayor.</p>
-          <div class="singles"><span>Sangre de cacao</span><span>Amaranto</span><span>Flor Violeta</span><span>Gabriela</span></div>
+          <div class="thumbs">
+            <figure><img src="assets/img/musica/sangre-de-cacao-portada.jpg" alt="Portada de Sangre de cacao" loading="lazy"><figcaption>Sangre de cacao · 2020</figcaption></figure>
+            <figure><img src="assets/img/musica/amaranto-portada.jpg" alt="Portada de Amaranto" loading="lazy"><figcaption>Amaranto · 2020</figcaption></figure>
+          </div>
+          <div class="singles"><span>Flor Violeta</span><span>Gabriela</span></div>
         </div>
       </article>
       <article class="album">
@@ -386,6 +396,7 @@ footer small{opacity:.55;font-size:.8rem}
       </div>
       <div class="card radio-card">
         <div class="tag">Radio · IMER</div>
+        <img class="radio-foto" src="assets/img/elements/nancy-zamher-horizonte.jpg" alt="Nancy Zamher en cabina" loading="lazy">
         <div class="freq">107.9 FM</div>
         <h3>Horizonte</h3>
         <p>Desde hace más de dos años, Nancy conduce la barra matutina de Horizonte, la emisora de jazz del Instituto Mexicano de la Radio, donde junta su oficio de periodista con su amor por la música.</p>
@@ -449,8 +460,7 @@ footer small{opacity:.55;font-size:.8rem}
 </section>
 
 <footer>
-  <img src="assets/img/elements/logo-nancy.png" alt="" onerror="this.remove()">
-  <div class="name">NANCY ZAMHER</div>
+  <img src="assets/img/elements/logo-nancy.png" alt="Nancy Zamher">
   <div class="social">
     <a href="https://open.spotify.com/artist/356ZQzLGPndwhRG6vczAva" target="_blank" rel="noopener">Spotify</a>
     <a href="https://www.youtube.com/channel/UCKJ3C3o4e_9IVJUGN86Fajg" target="_blank" rel="noopener">YouTube</a>
@@ -482,12 +492,30 @@ VIDEOS.forEach(id=>{
   vg.appendChild(d);
 });
 
-// Galería (fotos de Instagram de la web original)
-const IG=[['001-01','CBi77KHDnKA'],['002-02','CBUepuxDMti'],['003-03','CA6sfguDlA2'],['004-04','CBI-JkBDUWu'],['005-05','CAOCNhbD1Q4'],['006-06','B-NRfkHDNfG'],['007-07','B7hS3drDUBg'],['008-08','B9qPkkkjqhk'],['009-09','B9gE-SSjaln'],['010-10','B8o3SuwjrFw'],['011-11','B_prECdDv84'],['012-12','B7B1H2sD8EQ'],['013-13','B7SNbpcjuOo'],['014-14','B8g7mdTjh1O'],['015-15','B6PX2CQDeZE'],['016-16','Bxkch-6lRYd'],['017-17','B2-soFaj4sw'],['018-18','B1DEnZmjcVr'],['019-19','B0bME4qDS1N'],['020-20','BzLrY9gjMTF'],['021-21','B24QDjKj8VX'],['022-22','ByA7Fk9j0vC']];
+// Galería: fotos de la web original (con enlace a su post de Instagram) y fotos nuevas
+const IGP='https://www.instagram.com/';
+const FOTOS=[
+  ['nancy-zamher-foto-01.jpg',IGP+'nancyzamher/','En vivo en Jazzatlán Capital'],
+  ['nancy-zamher-instagram-012-12.jpg',IGP+'p/B7B1H2sD8EQ/','Nancy Zamher con su guitarra'],
+  ['nancy-zamher-foto-05.jpg',IGP+'nancyzamher/','En vivo con su banda'],
+  ['nancy-zamher-instagram-011-11.jpg',IGP+'p/B_prECdDv84/','Retrato ilustrado'],
+  ['nancy-zamher-foto-02.jpg',IGP+'nancyzamher/','Retrato'],
+  ['nancy-zamher-instagram-014-14.jpg',IGP+'p/B8g7mdTjh1O/','En escenario'],
+  ['nancy-zamher-instagram-015-15.jpg',IGP+'p/B6PX2CQDeZE/','Retrato'],
+  ['nancy-zamher-foto-07.jpg',IGP+'nancyzamher/','En concierto'],
+  ['nancy-zamher-instagram-007-07.jpg',IGP+'p/B7hS3drDUBg/','Concierto coral'],
+  ['nancy-zamher-instagram-016-16.jpg',IGP+'p/Bxkch-6lRYd/','Nancy Zamher con su guitarra'],
+  ['nancy-zamher-foto-04.jpg',IGP+'nancyzamher/','En Punto Gozadera'],
+  ['nancy-zamher-instagram-013-13.jpg',IGP+'p/B7SNbpcjuOo/','Con amigas cantautoras'],
+  ['nancy-zamher-foto-03.jpg',IGP+'nancyzamher/','Fotografía artística'],
+  ['nancy-zamher-instagram-017-17.jpg',IGP+'p/B2-soFaj4sw/','Cantando'],
+  ['nancy-zamher-foto-06.jpg',IGP+'nancyzamher/','En Punto Gozadera'],
+  ['nancy-zamher-instagram-019-19.jpg',IGP+'p/B0bME4qDS1N/','En el festival Cantares'],
+];
 const gal=document.getElementById('gallery');
-IG.forEach(([n,p])=>{
-  const a=document.createElement('a');a.href='https://www.instagram.com/p/'+p+'/';a.target='_blank';a.rel='noopener';
-  const im=new Image();im.loading='lazy';im.alt='Nancy Zamher en Instagram';im.src='assets/img/galeria/nancy-zamher-instagram-'+n+'.jpg';
+FOTOS.forEach(([f,href,alt])=>{
+  const a=document.createElement('a');a.href=href;a.target='_blank';a.rel='noopener';
+  const im=new Image();im.loading='lazy';im.alt=alt;im.src='assets/img/galeria/'+f;
   im.onerror=()=>a.remove();a.appendChild(im);gal.appendChild(a);
 });
 </script>
