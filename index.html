@@ -148,6 +148,11 @@ section{padding:96px 0}
 .thumbs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
 .thumbs img{border-radius:8px;aspect-ratio:1;object-fit:cover}
 .thumbs figcaption{font-size:.75rem;color:var(--gris);margin-top:4px}
+.listen{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+.listen a{text-decoration:none;font-size:.8rem;font-weight:500;padding:7px 14px;border-radius:999px;border:1px solid var(--crema-2);background:var(--crema);transition:.2s}
+.listen a:first-child{background:var(--amaranto);border-color:var(--amaranto);color:#fff}
+.listen a:hover{border-color:var(--cacao)}
+.listen a:first-child:hover{background:var(--amaranto-claro)}
 .singles{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
 .singles span{font-size:.75rem;background:var(--crema);border:1px solid var(--crema-2);padding:3px 10px;border-radius:999px}
 .player{margin-top:56px;display:grid;grid-template-columns:1fr 1fr;gap:28px}
@@ -156,6 +161,12 @@ section{padding:96px 0}
 .platforms a{text-decoration:none;font-size:.85rem;font-weight:500;border:1px solid var(--cacao);padding:9px 18px;border-radius:999px;transition:.2s}
 .platforms a:hover{background:var(--cacao);color:var(--crema)}
 @media (max-width:760px){.player{grid-template-columns:1fr}}
+
+/* TEXTURA DE PAPEL (fondo de Amaranto) */
+.papel{background:#d98c42 url('assets/img/elements/textura-papel.jpg') repeat;background-size:660px auto}
+.papel .sec-title .kicker{color:var(--cacao)}
+.papel .sec-title .line{background:var(--cacao)}
+.papel .platforms a{background:rgba(246,238,227,.85)}
 
 /* VIDEOS */
 .vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
@@ -313,7 +324,7 @@ footer small{opacity:.55;font-size:.8rem}
 </section>
 
 <!-- MUSICA -->
-<section id="musica">
+<section id="musica" class="papel">
   <div class="wrap">
     <div class="sec-title"><div class="kicker">Música</div><h2>Discografía</h2><span class="line"></span></div>
     <div class="disc">
@@ -329,8 +340,8 @@ footer small{opacity:.55;font-size:.8rem}
         <div class="body">
           <div class="meta">EP · 12 de junio de 2025 · 6 temas</div>
           <p>Un viaje melancólico al pasado con canciones escritas en 2015, que van de la música popular mexicana a la rumba, el rock y el rhythm and blues. Cierra la etapa que empezó en 2015. Producción de Felipe Souza y Ricardo Héctor Jiménez; arreglos y dirección musical de Jorge García Montemayor.</p>
-          <div class="singles"><span>Que pase el otoño</span></div>
-          <div class="platforms" style="margin-top:14px"><a href="https://open.spotify.com/album/1WMMq1JivqQaZ7K3LkHHha" target="_blank" rel="noopener">Escuchar en Spotify</a></div>
+          
+          <div class="listen"><a href="https://open.spotify.com/album/1WMMq1JivqQaZ7K3LkHHha" target="_blank" rel="noopener">▶ EP en Spotify</a><a href="https://found.ee/QuePaseElOtono" target="_blank" rel="noopener">«Que pase el otoño»</a><a href="https://open.spotify.com/album/5eIkbPfsWG8fq5xxNy9j6Y" target="_blank" rel="noopener">«Mientras tú no estabas»</a><a href="https://youtu.be/UoHkJGNXyQw" target="_blank" rel="noopener">Video «Sabes, mi hermana»</a></div>
         </div>
       </article>
       <article class="album">
@@ -343,6 +354,7 @@ footer small{opacity:.55;font-size:.8rem}
             <figure><img src="assets/img/musica/amaranto-portada.jpg" alt="Portada de Amaranto" loading="lazy"><figcaption>Amaranto · 2020</figcaption></figure>
           </div>
           <div class="singles"><span>Flor Violeta</span><span>Gabriela</span></div>
+          <div class="listen"><a href="https://open.spotify.com/artist/356ZQzLGPndwhRG6vczAva" target="_blank" rel="noopener">▶ Escuchar en Spotify</a><a href="https://youtu.be/nOkmErtBFr4" target="_blank" rel="noopener">Video «Sangre de cacao»</a><a href="https://youtu.be/5ZpREfe_EDQ" target="_blank" rel="noopener">Video «Amaranto»</a><a href="https://youtu.be/ZZ_Rk_7b2XU" target="_blank" rel="noopener">Live session Tocando Raíces</a></div>
         </div>
       </article>
       <article class="album">
@@ -350,7 +362,7 @@ footer small{opacity:.55;font-size:.8rem}
         <div class="body">
           <div class="meta">EP · 2015 · 5 temas</div>
           <p>Pentasoul es el dueto de Nancy Zamher con el guitarrista Gregorio Gómez. El EP se grabó en 2015 entre la Ciudad de México y Querétaro, con mezcla de Josué Partida y masterización de Luis Herrera.</p>
-          <div class="platforms" style="margin-top:14px"><a href="https://www.youtube.com/watch?v=2NruIt0oc6k" target="_blank" rel="noopener">«Hojas Secas» en YouTube</a></div>
+          <div class="listen"><a href="https://youtu.be/Iu6UnI6lHk8" target="_blank" rel="noopener">▶ Escuchar el EP</a><a href="https://www.youtube.com/watch?v=2NruIt0oc6k" target="_blank" rel="noopener">«Hojas Secas»</a></div>
         </div>
       </article>
       <article class="album">
@@ -358,6 +370,7 @@ footer small{opacity:.55;font-size:.8rem}
         <div class="body">
           <div class="meta">EP · 2012 · como Zamher·Time</div>
           <p>Su primer EP, publicado con el nombre Zamher·Time y nacido del blues, el género que marcó sus primeras letras.</p>
+          <div class="listen"><a href="https://youtu.be/dPWgv6b0qoI" target="_blank" rel="noopener">▶ Escuchar el EP</a></div>
         </div>
       </article>
     </div>
@@ -470,6 +483,7 @@ footer small{opacity:.55;font-size:.8rem}
     <a href="https://www.instagram.com/nancyzamher/" target="_blank" rel="noopener">Instagram</a>
     <a href="https://twitter.com/NancyZamher" target="_blank" rel="noopener">X / Twitter</a>
     <a href="https://soundcloud.com/nancyzamher" target="_blank" rel="noopener">SoundCloud</a>
+    <a href="https://linktr.ee/nancyzamher" target="_blank" rel="noopener">Todos sus enlaces</a>
   </div>
   <small>Hecho con amor · © 2012–2026 Nancy Zamher. Todos los derechos reservados.</small>
 </footer>
@@ -485,7 +499,7 @@ footer small{opacity:.55;font-size:.8rem}
 })();
 
 // Videos de YouTube (carga ligera: miniatura y reproducción al clic)
-const VIDEOS=['nPcI0ytt1q0','nOkmErtBFr4','iGSWEFfrnl8','6Jk9SLvAt4s','KG22T6ceBR4','e-h4Jfm6IUA','VhmjfMnrGzs','Zn9hTqHjVnQ'];
+const VIDEOS=['ZZ_Rk_7b2XU','UoHkJGNXyQw','5ZpREfe_EDQ','Iu6UnI6lHk8','dPWgv6b0qoI','nPcI0ytt1q0','nOkmErtBFr4','iGSWEFfrnl8','6Jk9SLvAt4s','KG22T6ceBR4','e-h4Jfm6IUA','VhmjfMnrGzs','Zn9hTqHjVnQ'];
 const vg=document.getElementById('vgrid');
 VIDEOS.forEach(id=>{
   const d=document.createElement('div');d.className='vid';
